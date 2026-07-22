@@ -1,0 +1,31 @@
+{
+  "name": "Zafer Yilmaz | International Business & Export Growth",
+  "short_name": "ZaferYilmaz.net",
+  "description": "Helping industrial manufacturers build structured international growth across the China-EMEA-CIS corridor.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007bff",
+  "icons": [
+    {
+      "src": "assets/zy-icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/zy-icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/zy-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/zy-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
