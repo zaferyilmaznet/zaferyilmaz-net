@@ -21,7 +21,7 @@ const ASSETS = [
   '/js/main.js',
 
   '/assets/linkedin-logo.png',
-  '/assets/social-card.jpg',
+  '/assets/social-card.png',
   '/assets/wechat-qr.png',
   '/assets/zaf.jpg',
 
