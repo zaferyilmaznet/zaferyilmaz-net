@@ -124,7 +124,7 @@ strong {
 
   /* Apply compact constraint only to inner header content */
   max-width: var(--content-max-width);
-  margin: 0 auto;
+  margin: 0 auto; /* center the element horizontally */
 }
 
 .header__logo {
