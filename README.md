@@ -1,6 +1,6 @@
 # ZaferYilmaz.net
 
-Official personal website of **Zafer Yilmaz**, an International Market Expansion Strategist specializing in helping industrial manufacturers expand across EMEA, CIS, and the China–EMEA–CIS corridor.
+Official personal website of **Zafer Yilmaz**, an International Business Development and Growth Strategist specializing in helping companies achieve sustainable success across global markets.
 
 **Live Website:** https://zaferyilmaz.net
 

@@ -12,7 +12,7 @@
 // ===========================================
 
 // 💡 Enhancement 1: Use a clear naming convention for the cache and assets
-const CACHE_NAME = 'zaferyilmaz-net-cache-v1-0-0-alpha-3'; // ➡️ Increment version on every code change to force update
+const CACHE_NAME = 'zaferyilmaz-net-cache-v1-0-0-alpha-4'; // ➡️ Increment version on every code change to force update
 const ASSETS = [
   '/', // The root (index.html)
   '/index.html',
