@@ -12,7 +12,7 @@
 // ===========================================
 
 // 💡 Enhancement 1: Use a clear naming convention for the cache and assets
-const CACHE_NAME = 'zaferyilmaz-net-cache-v1-0-0-alpha-4'; // ➡️ Increment version on every code change to force update
+const CACHE_NAME = 'zaferyilmaz-net-cache-v1-0-0-alpha-5'; // ➡️ Increment version on every code change to force update
 const ASSETS = [
   '/', // The root (index.html)
   '/index.html',
@@ -20,9 +20,9 @@ const ASSETS = [
   '/css/style.css',
   '/js/main.js',
 
-  '/assets/linkedin-logo.png',
-  '/assets/social-card.png',
+  '/assets/whatsapp-logo.png',
   '/assets/wechat-qr.png',
+  '/assets/social-card.png',
   '/assets/zaf.jpg',
 
   '/assets/zy-icon-72.png',
