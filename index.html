@@ -106,19 +106,35 @@
       }
     </style>
 
-    <!-- A JSON-LD Person schema -->
+    <!-- Person schema -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
+        "@id": "https://zaferyilmaz.net/#person",
         "name": "Zafer Yilmaz",
-        "url": "https://zaferyilmaz.net",
+        "url": "https://zaferyilmaz.net/",
         "jobTitle": "International Business Development and Growth Strategist",
         "image": "https://zaferyilmaz.net/assets/zaf.jpg",
         "sameAs": [
           "https://www.linkedin.com/in/zaferyilmaznet",
           "https://github.com/zaferyilmaznet"
         ]
+      }
+    </script>
+
+    <!-- WebSite schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://zaferyilmaz.net/#website",
+        "name": "ZaferYilmaz.net",
+        "alternateName": "Zafer Yilmaz",
+        "url": "https://zaferyilmaz.net/",
+        "publisher": {
+          "@id": "https://zaferyilmaz.net/#person"
+        }
       }
     </script>
   </head>
