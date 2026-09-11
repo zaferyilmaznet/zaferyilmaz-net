@@ -308,14 +308,6 @@ strong {
   fill: var(--color-primary);
 }
 
-#work-section hr {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  width: 100%;
-  max-width: 20rem;
-  opacity: 0.2;
-}
-
 /* --- 6. Contact Section (Form) --- */
 
 #contact-form {
