@@ -31,6 +31,12 @@
   --content-max-width: 720px;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Apply base styles */
 body {
   font-family: var(--font-stack);
@@ -101,6 +107,60 @@ strong {
 }
 
 /* --- 2. Header and Navigation --- */
+
+/* --- Language Bar --- */
+
+.language-bar {
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+
+  background-color: color-mix(in srgb, var(--color-surface) 92%, transparent);
+  backdrop-filter: blur(10px);
+
+  /* Top half of the rounded header shape */
+  /* border-radius: var(--radius-main) var(--radius-main) 0 0; */
+}
+
+.language-bar__inner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.45rem;
+
+  padding: 0.45rem var(--spacing-unit);
+
+  font-size: 0.72rem;
+  line-height: 1;
+  letter-spacing: 0.04em;
+}
+
+.language-bar__link {
+  color: var(--color-text-main);
+  text-decoration: none;
+  opacity: 0.5;
+
+  transition: opacity 0.2s ease;
+}
+
+.language-bar__link:hover,
+.language-bar__link:focus-visible,
+.language-bar__link.is-active {
+  opacity: 1;
+}
+
+.language-bar__link:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.language-bar__separator {
+  color: var(--color-text-soft);
+  opacity: 0.45;
+}
+
+/* Header */
 
 #header {
   /* Sticking the header to the top for easy access to navigation/toggle */
