@@ -62,6 +62,9 @@ if (contactForm) {
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize the theme toggle
   setupThemeToggle();
+
+  // Initialize mobile navigation
+  setupMobileNavigation();
 });
 
 /**
@@ -70,6 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
 const setupThemeToggle = () => {
   const toggleButton = document.getElementById('theme-toggle');
   const body = document.body;
+
+  if (!toggleButton) return;
 
   // Check local storage for previous preference
   const currentTheme = localStorage.getItem('theme');
@@ -91,7 +96,57 @@ const setupThemeToggle = () => {
   });
 };
 
-/** scroll spy */
+// ================================
+// Mobile Navigation
+// ================================
+
+const setupMobileNavigation = () => {
+  const menuToggle = document.getElementById('menu-toggle');
+  const primaryNavigation = document.getElementById('primary-navigation');
+
+  if (!menuToggle || !primaryNavigation) return;
+
+  const menuIcon = menuToggle.querySelector('.menu-icon');
+  const navLinks = primaryNavigation.querySelectorAll('.nav-link');
+
+  const closeMenu = () => {
+    primaryNavigation.classList.remove('is-open');
+
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.setAttribute('aria-label', 'Open navigation menu');
+
+    if (menuIcon) {
+      menuIcon.textContent = '☰';
+    }
+  };
+
+  menuToggle.addEventListener('click', () => {
+    const isOpen = primaryNavigation.classList.toggle('is-open');
+
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+    menuToggle.setAttribute(
+      'aria-label',
+      isOpen ? 'Close navigation menu' : 'Open navigation menu',
+    );
+
+    if (menuIcon) {
+      menuIcon.textContent = isOpen ? '✕' : '☰';
+    }
+  });
+
+  navLinks.forEach((link) => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Close mobile menu if viewport expands to desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 600) {
+      closeMenu();
+    }
+  });
+};
+
+/** Scroll Spy */
 
 const navLinks = document.querySelectorAll('.header__menu a');
 
