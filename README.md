@@ -1,6 +1,6 @@
 # ZaferYilmaz.net
 
-Official personal website of **Zafer Yilmaz**, an international business development professional specializing in helping companies achieve sustainable success across global markets.
+Official personal website of **Zafer Yılmaz**, an international business development professional specializing in helping companies achieve sustainable success across global markets.
 
 **Live Website:** https://zaferyilmaz.net
 

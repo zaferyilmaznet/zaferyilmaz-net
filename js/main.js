@@ -42,13 +42,13 @@ if (contactForm) {
         status.focus();
       } else {
         status.textContent =
-          'Sorry, your message could not be sent. Please try again later, or contact me via LinkedIn or WeChat below.';
+          'Sorry, your message could not be sent. Please try again later, or contact me via WhatsApp, WeChat, or Linkedin below.';
         status.classList.add('error');
         status.focus();
       }
     } catch (error) {
       status.textContent =
-        'Network error. Please try again later, or contact me via LinkedIn or WeChat below.';
+        'Network error. Please try again later, or contact me via WhatsApp, WeChat, or Linkedin below.';
       status.classList.add('error');
       status.focus();
     }
